@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1: illustrations
+
+### Changed
+- Empty screens now carry illustrations: Home before the first weigh-in, Records before anything is
+  filed, Plan before there is enough data, the empty drink and food logs, and the Bluetooth
+  permission screen. They are Storyset illustrations recoloured to Afya's pine teal, and they read on
+  both light and dark themes.
+- The About card credits Storyset, as its licence asks.
+
 ## 1.0.0: first public release
 
 The first release of Afya, an on-device reader for OKOK / Chipsea Bluetooth body-composition scales.
