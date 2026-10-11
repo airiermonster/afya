@@ -20,6 +20,23 @@ Scales in the OKOK family ship with an app that keeps your readings behind an ac
 a paid tier. The scale itself just broadcasts its figures over Bluetooth to anything listening.
 Afya listens, decodes the broadcast, and keeps everything on the phone.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="docs/screenshots/1-home.webp" alt="Home: today's weight with its change and trend, and four headline figures" width="250"><br><sub><b>Home</b>: today's weight, its change and trend</sub></td>
+    <td align="center" width="33%"><img src="docs/screenshots/2-measure.webp" alt="Measure: the scale's own figure locked and on file" width="250"><br><sub><b>Measure</b>: the scale's own figure, locked and filed</sub></td>
+    <td align="center" width="33%"><img src="docs/screenshots/3-records.webp" alt="Records: weight chart with the trend line over the readings" width="250"><br><sub><b>Records</b>: every weigh-in with the trend drawn over it</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><img src="docs/screenshots/4-history.webp" alt="Body fat history sheet with its range and chart" width="250"><br><sub><b>History</b>: any figure across every weigh-in</sub></td>
+    <td align="center" width="33%"><img src="docs/screenshots/5-plan-today.webp" alt="Plan, Today: water goal and drink log" width="250"><br><sub><b>Plan, Today</b>: water and energy for the day</sub></td>
+    <td align="center" width="33%"><img src="docs/screenshots/6-plan-goal.webp" alt="Plan, Goal: projection to the goal weight" width="250"><br><sub><b>Plan, Goal</b>: where the last four weeks are heading</sub></td>
+  </tr>
+</table>
+
+<sub>Screens show sample data.</sub>
+
 ## Features
 
 **Weighing in**
