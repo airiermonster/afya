@@ -14,11 +14,36 @@ body composition scales directly, with no vendor app, no account, no subscriptio
 your scale's own display shows is the number Afya shows first, and every body composition figure it
 derives is worked out on your phone and labelled as the estimate it is.
 
-## Why
+## Why I built Afya
 
-Scales in the OKOK family ship with an app that keeps your readings behind an account, a cloud and
-a paid tier. The scale itself just broadcasts its figures over Bluetooth to anything listening.
-Afya listens, decodes the broadcast, and keeps everything on the phone.
+I bought an OKOK body composition scale. The scale works well. The official app is the problem: it
+wants an account, shows ads, and puts useful features behind a **recurring VIP subscription**.
+Exporting your own data, the full set of body measurement sites, the drink log and an ad-free
+screen all cost money every month.
+
+You shouldn't have to keep paying to read your own scale. The scale already broadcasts every
+reading over Bluetooth to any phone nearby, so Afya listens to that broadcast, decodes it on your
+phone, and gives you the readout, the report and your history for free.
+
+**If you don't want a recurring payment to the OKOK app, Afya is for you.**
+
+| | OKOK app | Afya |
+| --- | --- | --- |
+| Price | Free with ads, VIP features by subscription | Free, no subscription |
+| Ads | Yes, unless you subscribe | Never |
+| Account | Required | None |
+| Where your readings live | The vendor's cloud | Only on your phone |
+| Weight, BMI and body composition report | Yes | Yes, each figure with its range and a plain explanation |
+| Export your data | VIP | PDF, CSV and JSON backup, free |
+| All 11 body measurement sites | VIP | Free, with history |
+| Drink log against a water goal | VIP | Free |
+| Weight-loss plan with a goal date | VIP | Free, fitted to your last four weeks |
+| AI report interpretation, food photo calories, family profiles | VIP | Not included |
+
+Afya is made for one person on one phone and leaves out the AI and family features on purpose. Its
+body composition figures come from published equations rather than the vendor's own algorithm, so
+they can differ a little from what the official app shows. See
+[Body composition, honestly](#body-composition-honestly) below.
 
 ## Screenshots
 
