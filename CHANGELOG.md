@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 — first public release
+## 1.0.0: first public release
 
 The first release of Afya, an on-device reader for OKOK / Chipsea Bluetooth body-composition scales.
 

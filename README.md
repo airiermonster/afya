@@ -10,7 +10,7 @@
 </p>
 
 **Afya** (Swahili for *health*) is an open-source Android app that reads OKOK / Chipsea Bluetooth
-body-composition scales directly — no vendor app, no account, no subscription, no ads. The weight
+body-composition scales directly, with no vendor app, no account, no subscription and no ads. The weight
 your scale's own display shows is the number Afya shows first, and every body-composition figure it
 derives is worked out on your phone and labelled as the estimate it is.
 
@@ -23,11 +23,11 @@ Afya listens, decodes the broadcast, and keeps everything on the phone.
 ## Features
 
 **Weighing in**
-- Reads the scale's Bluetooth broadcast — no pairing — and shows the figure exactly as the scale's
+- Reads the scale's Bluetooth broadcast without pairing and shows the figure exactly as the scale's
   display does, with the conversion to your chosen unit as a secondary line.
 - Files the reading automatically once the scale locks, keeps the screen on while you stand there,
   and still saves a reading that locked just as the phone went to sleep.
-- **"Is this you?"** — a weight far from your last two weeks is held until you say whose it is, so
+- **"Is this you?"**: a weight far from your last two weeks is held until you say whose it is, so
   whoever you lend your phone to never ends up in your history.
 - Launcher shortcut, Quick Settings tile and an optional daily reminder that open straight onto the
   weigh-in screen, and skip days you have already weighed in.
@@ -39,7 +39,7 @@ Afya listens, decodes the broadcast, and keeps everything on the phone.
   energy and more), each with its reference range, a plain word for where it sits, and one sentence
   on what it is.
 - Tap any figure for its history across every weigh-in.
-- Compositions are only compared between readings taken with the same height, age and sex —
+- Compositions are only compared between readings taken with the same height, age and sex, so
   editing your profile never shows up as a change in your body.
 - Goal projection from a least-squares fit of your last four weeks, and daily water and energy
   targets.
@@ -56,7 +56,7 @@ Afya listens, decodes the broadcast, and keeps everything on the phone.
 - No account, no analytics, no advertising SDK. Backups are only ever made by you, to a place you choose.
 - The only network request Afya can make is the one-time key lookup an *encrypted* scale needs, and
   every such request is listed in **You → Advanced → Network log**.
-- Optional **Health Connect** sharing copies the measured weight only — estimates are never written
+- Optional **Health Connect** sharing copies the measured weight only. Estimates are never written
   where other apps would show them as measurements.
 
 ## Install
@@ -92,11 +92,11 @@ Afya decodes the Chipsea advertising frames used by scales sold under the OKOK a
 | Frame | Status |
 | --- | --- |
 | `0xC0` broadcast V2 | Verified on hardware (product id 2577), including the scale's own unit and decimals. |
-| `0xC0` encrypted | Implemented — needs the scale's one-time key, fetched once and cached. Not yet observed live. |
+| `0xC0` encrypted | Implemented. Needs the scale's one-time key, fetched once and cached. Not yet observed live. |
 | `0xCA` broadcast V1, `0xB0` short frame | Implemented from the protocol, not yet seen on real hardware. |
 
 If your scale shows up in **You → Scale** but reads wrongly, turn on **Show raw BLE frames** under
-Advanced and open an issue with a few frames — they contain no personal data beyond the weight.
+Advanced and open an issue with a few frames. They contain no personal data beyond the weight.
 
 ## Body composition, honestly
 
@@ -104,11 +104,11 @@ The vendor computes composition from bioelectrical impedance with a closed nativ
 not use or reimplement it. Every figure comes from published population equations driven by your
 weight, height, age and sex:
 
-- Body fat — Deurenberg et al. (1991)
-- Total body water — Hall's lean-body hydration constant (water = fat-free mass × 0.732)
-- Resting energy — Mifflin–St Jeor (1990)
-- Visceral fat area — Yuki et al. (2004)
-- Muscle, protein and bone mineral — standard reference fractions of fat-free mass
+- Body fat: Deurenberg et al. (1991)
+- Total body water: Hall's lean-body hydration constant (water = fat-free mass × 0.732)
+- Resting energy: Mifflin–St Jeor (1990)
+- Visceral fat area: Yuki et al. (2004)
+- Muscle, protein and bone mineral: standard reference fractions of fat-free mass
 
 These are **estimates for a population, not measurements of you**, and the app says so wherever it
 shows one. Afya is not a medical device and is not medical advice.
@@ -142,7 +142,7 @@ app/src/main/java/com/maximillianurio/afya/
   app/     The view model that owns the Bluetooth scan, the store and the database.
   ui/      Jetpack Compose screens, components, theme and the brand mark.
 brand/     The logo, lockup and banner as SVG masters.
-docs/      HANDOFF.md — the reverse-engineered protocol spec and architecture notes.
+docs/      HANDOFF.md: the reverse-engineered protocol spec and architecture notes.
 ```
 
 The unit tests cover every value of the scale's property byte, the 15-bit obfuscation, body
