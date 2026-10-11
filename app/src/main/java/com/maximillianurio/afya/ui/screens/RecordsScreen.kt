@@ -47,9 +47,9 @@ import com.maximillianurio.afya.ui.components.AfyaDialog
 import com.maximillianurio.afya.ui.components.ChoicePill
 import com.maximillianurio.afya.ui.components.DeltaPill
 import com.maximillianurio.afya.ui.components.EmptyState
-import com.maximillianurio.afya.ui.components.Scene
 import com.maximillianurio.afya.ui.components.Hairline
 import com.maximillianurio.afya.ui.components.ListRow
+import com.maximillianurio.afya.ui.components.Scene
 import com.maximillianurio.afya.ui.components.SectionHead
 import com.maximillianurio.afya.ui.components.StatusPill
 import com.maximillianurio.afya.ui.components.TextAction
@@ -151,7 +151,7 @@ fun RecordsScreen(
                 EmptyState(
                     title = stringResource(R.string.records_empty_title),
                     body = stringResource(R.string.records_empty_body),
-                    scene = Scene.FirstWeighIn,
+                    scene = Scene.Records,
                 )
             }
             return@Column

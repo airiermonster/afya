@@ -71,6 +71,7 @@
     <string name="scale_bound_waiting">Your scale is bound. Step on it and it shows up here with its live figure.</string>
     <string name="conn_open_scale">open scale settings</string>
     <string name="scale_is_bound">Bound to this phone</string>
+    <string name="credit_storyset">Illustrations by Storyset</string>
     <string name="network_log">Network log</string>
     <string name="network_log_empty">Nothing has left this phone. A key lookup appears here if an encrypted scale ever needs one.</string>
     <plurals name="network_log_count">

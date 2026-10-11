@@ -36,6 +36,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
@@ -401,6 +402,13 @@ fun YouScreen(
                 text = stringResource(R.string.formula_note),
                 style = MaterialTheme.typography.bodySmall,
                 color = afya.inkMuted,
+            )
+            // Storyset's free licence asks for this credit wherever its illustrations appear.
+            val uri = LocalUriHandler.current
+            TextAction(
+                label = stringResource(R.string.credit_storyset),
+                onClick = { uri.openUri("https://storyset.com") },
+                modifier = Modifier.padding(top = 2.dp),
             )
             Spacer(Modifier.height(12.dp))
             Hairline()

@@ -71,9 +71,11 @@ import com.maximillianurio.afya.ui.components.AfyaDialog
 import com.maximillianurio.afya.ui.components.BandBar
 import com.maximillianurio.afya.ui.components.DeltaPill
 import com.maximillianurio.afya.ui.components.Hairline
+import com.maximillianurio.afya.ui.components.Illustration
 import com.maximillianurio.afya.ui.components.MetricGrid
 import com.maximillianurio.afya.ui.components.PrimaryAction
 import com.maximillianurio.afya.ui.components.ProgressRing
+import com.maximillianurio.afya.ui.components.Scene
 import com.maximillianurio.afya.ui.components.SectionHead
 import com.maximillianurio.afya.ui.components.StatusPill
 import com.maximillianurio.afya.ui.components.TextAction
@@ -469,6 +471,7 @@ private fun PlatformCard(
 
                 reading == null && !scanning && !permissionsGranted -> BlockerPanel(
                     image = AfyaIcons.Bluetooth,
+                    scene = Scene.Permission,
                     title = stringResource(R.string.blocker_permission_title),
                     body = stringResource(
                         if (permissionBlocked) R.string.blocker_permission_settings_body
@@ -645,14 +648,20 @@ private fun BlockerPanel(
     body: String,
     actionLabel: String,
     onAction: () -> Unit,
+    scene: Scene? = null,
 ) {
     val afya = MaterialTheme.afya
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(vertical = 12.dp),
     ) {
-        Icon(image, contentDescription = null, tint = afya.brand, modifier = Modifier.size(44.dp))
-        Spacer(Modifier.height(18.dp))
+        if (scene != null) {
+            Illustration(scene, size = 170.dp)
+            Spacer(Modifier.height(10.dp))
+        } else {
+            Icon(image, contentDescription = null, tint = afya.brand, modifier = Modifier.size(44.dp))
+            Spacer(Modifier.height(18.dp))
+        }
         Text(
             text = title,
             style = MaterialTheme.typography.titleMedium,

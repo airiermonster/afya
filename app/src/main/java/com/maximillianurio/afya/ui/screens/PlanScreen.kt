@@ -557,9 +557,9 @@ private fun DrinkCard(
         }
         Spacer(Modifier.height(14.dp))
         if (rows.isEmpty()) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Illustration(Scene.Glass, width = 72.dp, height = 48.dp)
-                Spacer(Modifier.width(12.dp))
+            Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                Illustration(Scene.Glass, size = 150.dp)
+                Spacer(Modifier.height(8.dp))
                 Text(
                     text = stringResource(R.string.plan_drinks_empty),
                     style = MaterialTheme.typography.bodySmall,
@@ -758,7 +758,7 @@ private fun ProjectionCard(
         if (projection == null) {
             Spacer(Modifier.height(12.dp))
             val span = entries.lastOrNull()?.let { it.timestampMs - entries.first().timestampMs } ?: 0L
-            Illustration(Scene.Heading, modifier = Modifier.align(Alignment.CenterHorizontally))
+            Illustration(Scene.Heading, modifier = Modifier.align(Alignment.CenterHorizontally), size = 180.dp)
             Spacer(Modifier.height(12.dp))
             Text(
                 text = stringResource(
@@ -1081,11 +1081,16 @@ private fun MealCard(
         )
         Spacer(Modifier.height(14.dp))
         if (rows.isEmpty()) {
-            Text(
-                text = stringResource(R.string.plan_food_empty),
-                style = MaterialTheme.typography.bodySmall,
-                color = afya.inkMuted,
-            )
+            Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                Illustration(Scene.Meal, size = 150.dp)
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    text = stringResource(R.string.plan_food_empty),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = afya.inkMuted,
+                    textAlign = TextAlign.Center,
+                )
+            }
         } else {
             rows.forEachIndexed { index, meal ->
                 Row(

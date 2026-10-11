@@ -196,10 +196,14 @@ profile comparison and the backup encryption.
 Afya is an independent project. It is not made, endorsed or supported by Chipsea Technologies or by
 the makers of the OKOK app. OKOK and Chipsea are the property of their respective owners and are
 named here only to say which scales Afya can read. No vendor code, artwork, sounds or text are
-included.
+included. Illustrations by [Storyset](https://storyset.com).
 
 ## Licence
 
 Afya is free software, released under the [GNU General Public License v3.0](LICENSE).
+
+The six illustrations in `app/src/main/res/drawable-nodpi/art_*.webp` are the exception: they are
+by [Storyset](https://storyset.com), used under the Storyset licence and **not** covered by the GPL.
+See [NOTICE.md](NOTICE.md).
 
 Made by Maximillian Urio, with love from Tanzania.
