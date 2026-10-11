@@ -9,9 +9,9 @@
   <a href="LICENSE"><img alt="Licence GPL-3.0" src="https://img.shields.io/badge/licence-GPL--3.0-0F6B62"></a>
 </p>
 
-**Afya** (Swahili for *health*) is an open-source Android app that reads OKOK / Chipsea Bluetooth
-body-composition scales directly, with no vendor app, no account, no subscription and no ads. The weight
-your scale's own display shows is the number Afya shows first, and every body-composition figure it
+**Afya** (Swahili for *health*) is an open source Android app that reads OKOK / Chipsea Bluetooth
+body composition scales directly, with no vendor app, no account, no subscription and no ads. The weight
+your scale's own display shows is the number Afya shows first, and every body composition figure it
 derives is worked out on your phone and labelled as the estimate it is.
 
 ## Why
@@ -33,9 +33,9 @@ Afya listens, decodes the broadcast, and keeps everything on the phone.
   weigh-in screen, and skip days you have already weighed in.
 
 **Understanding it**
-- **Trend weight**: a ten-day smoothed weight beside each reading, so a heavy morning reads as the
-  water swing it usually is.
-- Nineteen body-composition estimates (body fat, muscle, water, protein, bone, visceral fat, resting
+- **Trend weight**: your weight smoothed over the last ten days, shown beside each reading, so a
+  heavy morning reads as the water swing it usually is.
+- Nineteen body composition estimates (body fat, muscle, water, protein, bone, visceral fat, resting
   energy and more), each with its reference range, a plain word for where it sits, and one sentence
   on what it is.
 - Tap any figure for its history across every weigh-in.
@@ -47,10 +47,10 @@ Afya listens, decodes the broadcast, and keeps everything on the phone.
 **Your records**
 - Weight chart with the trend drawn over it, filters by month and by morning / afternoon / evening,
   and side-by-side comparison of any two weigh-ins.
-- Eleven tape-measurement sites with their own history, a drink log and a food log.
+- Eleven tape measurement sites with their own history, a drink log and a food log.
 - Exports: a designed **PDF health record**, **CSV**, and **JSON backups** that can be sealed with a
   passphrase (AES-256-GCM, key stretched with PBKDF2).
-- A home-screen widget with your last weight and the month behind it.
+- A home screen widget with your last weight and the month behind it.
 
 **Privacy**
 - No account, no analytics, no advertising SDK. Backups are only ever made by you, to a place you choose.
@@ -124,7 +124,7 @@ cd afya
 ```
 
 Release builds are signed with a key you provide. Copy `keystore.properties.example` to
-`keystore.properties` (it is git-ignored), point it at your keystore, then:
+`keystore.properties` (git ignores it), point it at your keystore, then:
 
 ```bash
 ./gradlew :app:assembleRelease
@@ -136,7 +136,7 @@ The APKs land in `app/build/outputs/apk/release/`, one per architecture plus a u
 
 ```
 app/src/main/java/com/maximillianurio/afya/
-  core/    Pure Kotlin: the scale protocol, decoding and de-obfuscation, body-composition equations,
+  core/    Pure Kotlin: the scale protocol, decoding and deobfuscation, body composition equations,
            the report, trend weight, targets, the guest check. Unit-tested on the JVM.
   data/    SQLite history, preferences, backup and its encryption, PDF and CSV export, Health Connect.
   app/     The view model that owns the Bluetooth scan, the store and the database.
