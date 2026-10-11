@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Long-press the launcher icon: straight onto the platform, past Home. -->
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_measure"
+        android:shortcutId="weigh_in"
+        android:shortcutLongLabel="@string/shortcut_weigh_long"
+        android:shortcutShortLabel="@string/shortcut_weigh_short">
+        <intent
+            android:action="com.maximillianurio.afya.action.WEIGH_IN"
+            android:targetClass="com.maximillianurio.afya.MainActivity"
+            android:targetPackage="com.maximillianurio.afya" />
+    </shortcut>
+</shortcuts>

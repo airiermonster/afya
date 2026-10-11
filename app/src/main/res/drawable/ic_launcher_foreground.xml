@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The Afya mark in mint, centred in the adaptive icon's safe zone. Geometry: ui/brand/AfyaMark.kt. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:translateX="18"
+        android:translateY="18">
+        <path
+            android:pathData="M24,12.5a11.5,11.5 0 1,1 0,23a11.5,11.5 0 1,1 0,-23"
+            android:strokeWidth="5"
+            android:strokeColor="#FFE8F1EE"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M35.5,12.5V35.5"
+            android:strokeWidth="5"
+            android:strokeColor="#FFE8F1EE"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M24,24L27.5,17.94"
+            android:strokeWidth="3"
+            android:strokeColor="#FFE8F1EE"
+            android:strokeLineCap="round" />
+        <path
+            android:fillColor="#FFE8F1EE"
+            android:pathData="M21.2,24a2.8,2.8 0 1,0 5.6,0a2.8,2.8 0 1,0 -5.6,0" />
+    </group>
+</vector>

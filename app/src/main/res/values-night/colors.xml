@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF0B1412</color>
+    <color name="splash_disc">#FF0F6B62</color>
+
+    <color name="widget_card">#FF14201D</color>
+    <color name="widget_ink">#FFE4F0EC</color>
+    <color name="widget_muted">#FF9BB1AA</color>
+    <color name="widget_brand">#FF37B89E</color>
+    <color name="widget_wash">#FF16332D</color>
+</resources>

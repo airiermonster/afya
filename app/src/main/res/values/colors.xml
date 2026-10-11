@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The window behind Compose's first frame: the theme's canvas, so launch never flashes. -->
+    <color name="bg">#FFE8F1EE</color>
+    <color name="splash_disc">#FF0F6B62</color>
+
+    <!-- The home-screen widget draws outside Compose, so it reads the palette from here. -->
+    <color name="widget_card">#FFFFFFFF</color>
+    <color name="widget_ink">#FF0E211E</color>
+    <color name="widget_muted">#FF526B64</color>
+    <color name="widget_brand">#FF0F6B62</color>
+    <color name="widget_wash">#FFDCEDE8</color>
+</resources>

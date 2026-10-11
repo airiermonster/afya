@@ -1,0 +1,10 @@
+<!-- Afya mark: a single-storey "a" whose bowl is a dial, needle on the reading.
+     48-unit grid. Source of truth for ui/brand/AfyaMark.kt and the Android drawables. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24,12.5a11.5,11.5 0 1,1 0,23a11.5,11.5 0 1,1 0,-23" stroke-width="5"/>
+    <path d="M35.5,12.5V35.5" stroke-width="5"/>
+    <path d="M24,24L27.5,17.94" stroke-width="3"/>
+  </g>
+  <circle cx="24" cy="24" r="2.8" fill="currentColor"/>
+</svg>

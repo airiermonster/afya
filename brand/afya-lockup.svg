@@ -1,0 +1,8 @@
+<!-- Afya lockup: icon tile + lowercase wordmark. Wordmark is Manrope ExtraBold (800), tracking -0.03em;
+     install Manrope (res/font/manrope_variable.ttf) or outline the text before sending to print. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 96" width="600" height="192">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14806F"/><stop offset="1" stop-color="#0A5850"/></linearGradient></defs>
+  <rect x="8" y="8" width="80" height="80" rx="22" fill="url(#g)"/>
+  <g transform="translate(21.3 21.3) scale(1.111)" color="#E8F1EE"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M24,12.5a11.5,11.5 0 1,1 0,23a11.5,11.5 0 1,1 0,-23" stroke-width="5"/><path d="M35.5,12.5V35.5" stroke-width="5"/><path d="M24,24L27.5,17.94" stroke-width="3"/></g><circle cx="24" cy="24" r="2.8" fill="currentColor"/></g>
+  <text x="104" y="66" font-family="Manrope, sans-serif" font-weight="800" font-size="56" letter-spacing="-1.7" fill="#0E211E">afya</text>
+</svg>
